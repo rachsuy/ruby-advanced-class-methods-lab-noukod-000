@@ -36,8 +36,12 @@ class Song
       self.all.find{|song| song.name == name}
   end
   def self.alphabetical
+    self.all.sort_by{|x| x.name}
     
   end
+  
+  def destroy_all(name)
+    self.destroy 
 end
 #song = Song.create
 #Song.all.include?(song)
