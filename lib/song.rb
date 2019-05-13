@@ -17,7 +17,7 @@ class Song
   end
   def self.create 
     song = Song.new
-    # Song.all.include?(song)
+    Song.all.include?(song)
     song
   end 
   def self.create_by_name(name)
