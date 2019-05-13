@@ -39,6 +39,7 @@ class Song
     self.all.sort_by{|x| x.name}
     
   end
+  def new_from_filename
   def self.destroy_all
     self.all.clear
   end
