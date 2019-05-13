@@ -40,6 +40,9 @@ class Song
     
   end
   def new_from_filename
+  
+    self.name.split("-").collect{|w| w.capitalize}.join(" ")
+  end
   def self.destroy_all
     self.all.clear
   end
