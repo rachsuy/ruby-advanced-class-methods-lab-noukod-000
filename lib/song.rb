@@ -35,7 +35,7 @@ class Song
   def self.find_by_name(name)
       self.all.find{|song| song.name == name}
   end
-  def self.new_by_name(name)
+  def self.alphabetical
     
   end
 end
