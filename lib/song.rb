@@ -41,7 +41,7 @@ class Song
   end
   def new_from_filename(name)
     song =self.new 
-    song.name = self.name.split("-")[0].join("-")
+    song.name = self.name.split("-")[0].chmod("mp3")
   end
   def self.destroy_all
     self.all.clear
