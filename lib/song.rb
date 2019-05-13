@@ -16,7 +16,7 @@ class Song
     song
   end
   def self.create 
-    song =self.new
+    song = Song.new
     song
   end 
   def self.create_by_name(name)
