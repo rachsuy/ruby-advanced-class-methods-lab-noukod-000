@@ -39,10 +39,8 @@ class Song
     self.all.sort_by{|x| x.name}
     
   end
-  
-  def destroy_all
+  def self.destroy_all
     self.all.clear
-    
   end
 end
 #song = Song.create
