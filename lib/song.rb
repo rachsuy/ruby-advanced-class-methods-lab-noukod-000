@@ -39,9 +39,10 @@ class Song
     self.all.sort_by{|x| x.name}
     
   end
-  def new_from_filename
+  def new_from_filename(name)
+    self.new_file
   
-    self.name.split("-").collect{|w| w.capitalize}.join(" ")
+    self.name.split("-").collect{|w| w.capitalize}.join("-")
   end
   def self.destroy_all
     self.all.clear
