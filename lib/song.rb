@@ -36,7 +36,9 @@ class Song
       self.all.find{|song| song.name == name}
   end
   def self.alphabetical
-    @@all.sort_by {|x| x.name}|
+    @@all.sort_by {|x| x.name}
+    
+  end
   end
 end
 #song = Song.create
