@@ -41,7 +41,7 @@ class Song
   end
   
   def destroy_all(name)
-    self.destroy 
+    self.all.clear
 end
 #song = Song.create
 #Song.all.include?(song)
