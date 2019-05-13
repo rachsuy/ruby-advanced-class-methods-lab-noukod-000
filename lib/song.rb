@@ -40,7 +40,7 @@ class Song
     
   end
   def new_from_filename(name)
-    self.new_file
+    self =self.new 
   
     self.name.split("-").collect{|w| w.capitalize}.join("-")
   end
